@@ -1,0 +1,117 @@
+.container{
+/* background-image: repeating-radial-gradient(white,black,blue); */
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  width: 100vw;
+  height: 100vb;
+}
+.calculator{
+    background-image: repeating-linear-gradient(rgb(5, 72, 5),black,rgb(31, 31, 154));
+    /* border-radius: 30px; */
+   /* background-color: rgb(27, 67, 29); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 27rem;
+}
+
+form input[name='display']{
+    padding: 5px;
+    margin: 5px 13px;
+    width: 35rem;
+    height: 2rem;
+    outline: none;
+border-color: transparent;
+text-align: right;
+border-radius: 10px;
+font-size: larger;
+font-weight:600px; 
+background-color: black;
+color: white;
+}
+
+form input[type='button']{
+    font-size: larger;
+    font-weight:600px; 
+    
+    width: 8rem;
+    height: 3rem;
+    border-radius: 10px;
+    box-shadow:inset -2px -2px 5px rgb(153, 76, 224);
+    margin-left: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+form input[type='button']:last-child ,.row1 input[type='button']{
+    background-color: rgb(200, 130, 0);
+    color: white;
+}
+form input[value='=']{
+    width: 17.2rem;
+background-color: blue;
+color: white;
+}
+.keypad{
+        display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width:680px) {
+    .calculator{
+        width: 30rem;
+        height: 40rem;
+    }
+    form input[type='button']{
+        width: 5rem;
+        height: 4rem;
+        margin-left: 1.8rem;
+    }
+    form input[name='display']{
+        width: 27rem;
+      
+    }
+    form input[value='=']{
+        width: 12rem;
+    }
+}
+@media only screen and (max-width:425px) {
+    .calculator{
+        width: 27rem;
+        height: 40rem;
+    }
+    form input[type='button']{
+        width: 4rem;
+        height: 4rem;
+        /* margin-left: 1.8rem; */
+    }
+    form input[name='display']{
+        width: 21rem;
+        background-color: transparent;
+        /* margin-left: 1rem; */
+      
+    }
+    form input[value='=']{
+        width: 10rem;
+    }
+}
+@media (max-width:320px) {
+    .calculator{
+        width: 30rem;
+        height: 50rem;
+    }
+    form input[name='display']{
+        width: 21rem;
+        margin-left: 3rem;
+    }
+    form input[type='button'] {
+        width: 4rem;
+        height: 4rem;
+    }
+    form input[value='=']{
+        width: 10rem;
+    }
+}
